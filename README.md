@@ -18,10 +18,10 @@
 
 ## Introduction
 
-- Temperatue independent voltage reference circuit widely used in Integrated Cicuits.
-- Produces cinstant voltage regardless of power supply variation, temp. changes and circuit loading.
-- Output voltage of 1.2v (close to the band gap enery of silicon at 0 deg kelvin)
-- All applications starting from analog, digital, mixed mode, RF and SOCs
+- Temperature-independent voltage reference circuit widely used in Integrated Circuits.
+- Produces constant voltage regardless of power supply variation, temp. changes and circuit loading.
+- Output voltage of 1.2v (close to the bandgap energy of silicon at 0 deg kelvin)
+- All applications starting from analog, digital, mixed-mode, RF, and SOCs
 
 ![Screenshot from 2021-10-21 09-16-02](https://user-images.githubusercontent.com/80625515/138239326-21775953-80a9-4241-9fd3-71154af78744.png)
 
@@ -32,14 +32,14 @@
     - voltage drops over time
 - A typical power supply is also not suitable.
     - noisy output and residual ripple
-- A voltage referene IC used buried Zener Diode.
-    - Discrete design required additional componentsand high frequency filtering circuits due to higher thermal noise.
+- A voltage reference IC used buried Zener Diode.
+    - Discrete design required additional components and high-frequency filtering circuits due to higher thermal noise.
     - low voltage Zener diode is not available
-- A Bandgap reference which can be integrated in bulk CMOS, Bi-CMOS or Bipolar technologies without the use of external cmponents.
+- A Bandgap reference that can be integrated into bulk CMOS, Bi-CMOS, or Bipolar technologies without the use of external components.
 
 ### Applications of BGR
 
-- Low dropoutreglators (LDO)
+- Low dropout reglators (LDO)
 - DC-to-DC buck converters
 - Analog-to-Digital Converter (ADC)
 - Digital-to-Analog Converter (DAC)
@@ -51,7 +51,7 @@
 
 ### Architecture wise BGR can be designed in two ways,
 
-1. Using self-biased current mirror
+1. Using a self-biased current mirror
 2. Using Operational- Amplifier
 
 ### Application wise BGR can be categorized as,
@@ -86,8 +86,8 @@
 ![Screenshot from 2021-10-21 09-30-46](https://user-images.githubusercontent.com/80625515/138255278-9881ef63-260c-4a08-bf70-57efde49273d.png)
 
 - CTAT voltage generation circuit
-- PTAT voltage genertaion circuit
-- Self-biased current mirror cirrcuit
+- PTAT voltage generation circuit
+- Self-biased current mirror circuit
 - Reference branch circuit
 - Start-up circuit
 
@@ -114,7 +114,7 @@ It is the most important component of BGR.
 - R1 = Vt 1n (N)/I
 - Resistance decreases, so area decreases with the increase of circuit current.
 - Resistance increases, so area increases with the decrease of circuit current.
-- Also the resistance value depends on number of BJT used in the branch 2.
+- Also the resistance value depends on the number of BJT used in branch 2.
 i.e, for 10uA current with N=8, R1 calculated to be 5.4k Ohm
 
 ## Self-bias Current Mirror
@@ -131,19 +131,19 @@ The objective of reference generation is to establish DC voltage or current,
 #### Issues:
 
 - Output current of this circuit quite sensitive to VDD
-- For a less sensitive solution, the circuit must bias itself, i.e Iref must be some how derived from Iout
+- For a less sensitive solution, the circuit must bias itself, i.e Iref must be somehow derived from Iout
 
 ### Self-Biased Current Mirror & its Issues 
 
-- The idea of self bias is that if Iout is to be ultimate independent of the Iref can be a replica of iout.
+- The idea of self-bias is that if Iout is to be ultimate independent of the Iref can be a replica of iout.
 - MP1 and MP2 copy Iout and define Iref
-Since each diode coonnected device feed from a current source, Iout and Iref arerelative independent of Vdd.
+Since each diode-connected device feed from a current source, Iout and Iref are relative independents of Vdd.
 
 ![Screenshot from 2021-10-21 12-26-14](https://user-images.githubusercontent.com/80625515/138248033-f48c731f-77c0-4864-81bf-2751d42ab58f.png)
 
 #### Issues:
 
-- The circuit is governed by one equation; Iout=K x Iref, hence can support any amount of current.
+- The circuit is governed by one equation; Iout=K x Iref hence can support any amount of current.
 - To uniquely define the currents, another constraint must be added in the circuit
 
 ![Screenshot from 2021-10-21 12-27-29](https://user-images.githubusercontent.com/80625515/138247770-d12aa7d8-d66d-42fa-8142-058901e8422b.png)
@@ -151,8 +151,8 @@ Since each diode coonnected device feed from a current source, Iout and Iref are
 
 - In the above circuit Rs defines current uniquely
 - Both Iout and Iref are very little dependent on Vdd.
-- Loop Gain always less than one, by-default the circuit is stable.
-- An important issue in supply-independent biasing is the existence of degenerate bias point.
+- Loop Gain is always less than one, by default the circuit is stable.
+- An important issue in supply-independent biasing is the existence of degenerate bias points.
 - Start-up problem when supply turned on.
 
 ### Summary of Self-Biased Current Mirror
@@ -168,16 +168,16 @@ Since each diode coonnected device feed from a current source, Iout and Iref are
 
 #### Limitations
 
-- More prone to supply volage variation
-- Cascode structue can be used to solve the issue
-- Voltage head room issues
+- More prone to supply voltage variation
+- Cascode structure can be used to solve the issue
+- Voltage headroom issues
 - Start-up issue
 
 ## Reference Branch
 
 ![Screenshot from 2021-10-21 12-43-06](https://user-images.githubusercontent.com/80625515/138246778-c109c899-dfe9-468f-9a36-a92c3d33ea40.png)
 
-- Current I3 is same as I1 & I2
+- Current I3 is the same as I1 & I2
 - Voltage across Q3 is CTAT type
 - Voltage across R2 is PTAT type
 - Vref is the addition of CTAT & PTAT voltages
@@ -186,7 +186,7 @@ Since each diode coonnected device feed from a current source, Iout and Iref are
 ### Design of R2 Resistance 
 
 - Tempco. of Vref should be zero
-- As all the values known, alpha ca be calculated easily.
+- As all the values known, alpha can be calculated easily.
 - R2 = alpha(R1)
 
 ## Start-up
@@ -195,7 +195,7 @@ Since each diode coonnected device feed from a current source, Iout and Iref are
     
 ![Screenshot from 2021-10-21 12-52-29](https://user-images.githubusercontent.com/80625515/138246129-68ef3b3c-3e79-4a7e-9af7-6a1c7ad7eb5b.png)
 
-- If the channel length modulation is negligible, the current hardly depends on supply voltage.
+- If the channel length modulation is negligible, the current hardly depends on the supply voltage.
 - The main issue in supply independent biasing is the existence of degenerate bias points.
 - There are two stable operating points
     - Iin = Iout = 0A (undesired operating point)
