@@ -1,0 +1,118 @@
+| units: 1e+06 tech: sky130A format: MIT
+x net2 net6 pfet_1/a_n30_0# vdd l=200 w=500 x=48 y=18 sky130_fd_pr__pfet_01v8_lvt
+x net2 pfet_1/a_n30_0# vdd vdd l=200 w=500 x=278 y=18 sky130_fd_pr__pfet_01v8_lvt
+x net2 vdd vref vdd l=200 w=500 x=508 y=18 sky130_fd_pr__pfet_01v8_lvt
+x net2 vdd net1 vdd l=200 w=500 x=968 y=18 sky130_fd_pr__pfet_01v8_lvt
+x net2 vref vdd vdd l=200 w=500 x=738 y=18 sky130_fd_pr__pfet_01v8_lvt
+x net2 net1 vdd vdd l=200 w=500 x=1198 y=18 sky130_fd_pr__pfet_01v8_lvt
+x net2 vdd net2 vdd l=200 w=500 x=1428 y=18 sky130_fd_pr__pfet_01v8_lvt
+x net2 vdd net1 vdd l=200 w=500 x=2348 y=18 sky130_fd_pr__pfet_01v8_lvt
+x net2 net2 vdd vdd l=200 w=500 x=1658 y=18 sky130_fd_pr__pfet_01v8_lvt
+x net2 net1 vdd vdd l=200 w=500 x=2578 y=18 sky130_fd_pr__pfet_01v8_lvt
+x net2 vdd net2 vdd l=200 w=500 x=1888 y=18 sky130_fd_pr__pfet_01v8_lvt
+x net2 vdd vref vdd l=200 w=500 x=2808 y=18 sky130_fd_pr__pfet_01v8_lvt
+x net2 net2 vdd vdd l=200 w=500 x=2118 y=18 sky130_fd_pr__pfet_01v8_lvt
+x net2 vref vdd vdd l=200 w=500 x=3038 y=18 sky130_fd_pr__pfet_01v8_lvt
+x vdd vdd net1 vdd l=200 w=500 x=3268 y=18 sky130_fd_pr__pfet_01v8_lvt
+x net6 net1 vdd vdd l=200 w=500 x=3498 y=18 sky130_fd_pr__pfet_01v8_lvt
+x net6 vdd net1 vdd l=200 w=500 x=3728 y=18 sky130_fd_pr__pfet_01v8_lvt
+C vref net1 8.07
+C vref vdd 4.20
+C vdd net1 10.77
+C net6 vdd 11.70
+C net2 net6 6.13
+C net1 GND 5.01
+R net1 1111
+= net1 pfet_16/a_200_0#
+= net1 pfet_15/a_n30_0#
+= net1 pfet_14/a_200_0#
+= net1 pfet_11/a_n30_0#
+= net1 pfet_10/a_200_0#
+= net1 pfet_4/a_200_0#
+= net1 pfet_5/a_n30_0#
+C vref GND 3.78
+R vref 591
+= vref pfet_13/a_n30_0#
+= vref pfet_12/a_200_0#
+= vref pfet_3/a_n30_0#
+= vref pfet_2/a_200_0#
+C net2 GND 11.47
+R net2 4607
+= net2 pfet_13/a_0_n13#
+= net2 pfet_12/a_0_n13#
+= net2 pfet_11/a_0_n13#
+= net2 pfet_10/a_0_n13#
+= net2 pfet_9/a_0_n13#
+= net2 pfet_9/a_n30_0#
+= net2 pfet_8/a_200_0#
+= net2 pfet_8/a_0_n13#
+= net2 pfet_7/a_0_n13#
+= net2 pfet_7/a_n30_0#
+= net2 pfet_6/a_200_0#
+= net2 pfet_6/a_0_n13#
+= net2 pfet_4/a_0_n13#
+= net2 pfet_5/a_0_n13#
+= net2 pfet_3/a_0_n13#
+= net2 pfet_2/a_0_n13#
+= net2 pfet_0/a_0_n13#
+= net2 pfet_1/a_0_n13#
+C vdd GND 65.62
+R vdd 16144
+= vdd pfet_16/a_n30_0#
+= vdd pfet_16/w_n48_n18#
+= vdd pfet_15/a_200_0#
+= vdd pfet_15/w_n48_n18#
+= vdd pfet_13/a_200_0#
+= vdd pfet_13/w_n48_n18#
+= vdd pfet_14/a_0_n13#
+= vdd pfet_14/a_n30_0#
+= vdd pfet_14/w_n48_n18#
+= vdd pfet_12/a_n30_0#
+= vdd pfet_12/w_n48_n18#
+= vdd pfet_11/a_200_0#
+= vdd pfet_11/w_n48_n18#
+= vdd pfet_10/a_n30_0#
+= vdd pfet_10/w_n48_n18#
+= vdd pfet_9/a_200_0#
+= vdd pfet_9/w_n48_n18#
+= vdd pfet_8/a_n30_0#
+= vdd pfet_8/w_n48_n18#
+= vdd pfet_7/a_200_0#
+= vdd pfet_7/w_n48_n18#
+= vdd pfet_6/a_n30_0#
+= vdd pfet_6/w_n48_n18#
+= vdd pfet_4/a_n30_0#
+= vdd pfet_4/w_n48_n18#
+= vdd pfet_5/a_200_0#
+= vdd pfet_5/w_n48_n18#
+= vdd pfet_3/a_200_0#
+= vdd pfet_3/w_n48_n18#
+= vdd pfet_2/a_n30_0#
+= vdd pfet_2/w_n48_n18#
+= vdd pfet_0/w_n48_n18#
+= vdd pfet_1/a_200_0#
+= vdd pfet_1/w_n48_n18#
+= SUB pfet_16/SUB
+= SUB pfet_15/SUB
+= SUB pfet_13/SUB
+= SUB pfet_14/SUB
+= SUB pfet_12/SUB
+= SUB pfet_11/SUB
+= SUB pfet_10/SUB
+= SUB pfet_9/SUB
+= SUB pfet_8/SUB
+= SUB pfet_7/SUB
+= SUB pfet_6/SUB
+= SUB pfet_4/SUB
+= SUB pfet_5/SUB
+= SUB pfet_3/SUB
+= SUB pfet_2/SUB
+= SUB pfet_0/SUB
+= SUB pfet_1/SUB
+R pfet_1/a_n30_0# 2627
+= pfet_1/a_n30_0# pfet_0/a_200_0#
+C net6 GND 4.30
+R net6 3943
+= net6 pfet_16/a_0_n13#
+= net6 pfet_15/a_0_n13#
+= net6 pfet_0/a_n30_0#

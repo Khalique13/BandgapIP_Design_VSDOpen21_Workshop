@@ -1,0 +1,190 @@
+timestamp 1634628445
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 1e+06
+resistclasses 4400000 2200000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+use pfet pfet_1 1 0 278 0 1 18
+use pfet pfet_0 1 0 48 0 1 18
+use pfet pfet_2 1 0 508 0 1 18
+use pfet pfet_3 1 0 738 0 1 18
+use pfet pfet_5 1 0 1198 0 1 18
+use pfet pfet_4 1 0 968 0 1 18
+use pfet pfet_6 1 0 1428 0 1 18
+use pfet pfet_7 1 0 1658 0 1 18
+use pfet pfet_8 1 0 1888 0 1 18
+use pfet pfet_9 1 0 2118 0 1 18
+use pfet pfet_10 1 0 2348 0 1 18
+use pfet pfet_11 1 0 2578 0 1 18
+use pfet pfet_12 1 0 2808 0 1 18
+use pfet pfet_14 1 0 3268 0 1 18
+use pfet pfet_13 1 0 3038 0 1 18
+use pfet pfet_15 1 0 3498 0 1 18
+use pfet pfet_16 1 0 3728 0 1 18
+port "vref" 3 25 586 25 586 li
+port "net6" 5 7 -151 7 -151 li
+port "net2" 4 8 -51 8 -51 li
+port "net1" 2 19 707 19 707 li
+port "vdd" 6 -64 825 -64 825 li
+node "vref" 493 4523.2 25 586 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 398248 8224 0 0 0 0 0 0 0 0 0 0 0 0
+node "net6" 890 7147.82 7 -151 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 89200 1692 0 0 406258 9150 17664 1520 0 0 0 0 0 0 0 0 0 0
+node "net2" 3295 9984.8 8 -51 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 294000 8540 0 0 324448 6748 0 0 0 0 0 0 0 0 0 0 0 0
+node "net1" 14175 6928.7 19 707 li 0 0 0 0 0 0 0 0 0 0 36000 3144 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 433258 12258 70656 6080 0 0 0 0 0 0 0 0 0 0
+node "vdd" 47105 79136.1 -64 825 li 0 0 0 0 5284512 10984 0 0 1044000 20880 72000 6288 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21000 610 0 0 1179582 29582 143472 12292 0 0 0 0 0 0 0 0 0 0
+substrate "SUB" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "net2" "vdd" 1510.2
+cap "vref" "net1" 8058.97
+cap "vdd" "net1" 10801.1
+cap "vdd" "vref" 4160.07
+cap "net2" "net6" 6119.71
+cap "net6" "net1" 21.268
+cap "net6" "vref" 22
+cap "vdd" "net6" 11700.8
+cap "net2" "net1" 54.2143
+cap "pfet_1/a_n30_0#" "pfet_1/a_0_n13#" 33
+cap "pfet_1/w_n48_n18#" "pfet_0/a_n30_0#" -18.9065
+cap "pfet_1/a_n30_0#" "pfet_0/a_n30_0#" 4.36765
+cap "pfet_2/a_200_0#" "pfet_0/a_n30_0#" -1.56316
+cap "pfet_0/a_n30_0#" "pfet_1/a_0_n13#" 11.7857
+cap "pfet_5/a_n30_0#" "pfet_2/w_n48_n18#" -26.7636
+cap "pfet_2/a_200_0#" "pfet_2/a_0_n13#" 33
+cap "pfet_5/a_n30_0#" "pfet_2/a_200_0#" -1.56316
+cap "pfet_2/a_200_0#" "net6" 4.36765
+cap "pfet_5/a_n30_0#" "pfet_2/a_0_n13#" 11.7857
+cap "pfet_5/a_n30_0#" "net6" 0.299154
+cap "pfet_5/a_200_0#" "net6" 0.299154
+cap "pfet_5/a_200_0#" "vref" -1.56316
+cap "pfet_5/a_200_0#" "pfet_5/a_0_n13#" 11.7857
+cap "pfet_5/a_200_0#" "pfet_5/w_n48_n18#" -26.7636
+cap "pfet_15/a_0_n13#" "pfet_14/a_0_n13#" 1.11567
+cap "pfet_11/a_0_n13#" "pfet_14/a_0_n13#" 9.96667
+cap "pfet_12/a_200_0#" "pfet_15/a_0_n13#" 4.36765
+cap "pfet_11/a_0_n13#" "pfet_12/a_200_0#" 33
+cap "pfet_14/w_n48_n18#" "pfet_15/a_0_n13#" 9.96667
+cap "net2" "pfet_14/w_n48_n18#" 1.18651
+cap "pfet_0/a_n30_0#" "pfet_1/a_200_0#" -6.88877
+cap "pfet_2/a_200_0#" "pfet_0/a_n30_0#" 11
+cap "pfet_1/a_n30_0#" "net1" 4.36765
+cap "net1" "pfet_0/a_n30_0#" 0.271095
+cap "pfet_2/a_0_n13#" "pfet_1/a_0_n13#" 9.96667
+cap "pfet_2/a_0_n13#" "pfet_3/a_0_n13#" 0.859195
+cap "pfet_1/a_n30_0#" "pfet_2/a_200_0#" 33
+cap "pfet_1/a_0_n13#" "pfet_0/a_0_n13#" 9.96667
+cap "pfet_2/a_0_n13#" "pfet_1/a_0_n13#" 1.73837
+cap "pfet_5/a_n30_0#" "vdd" -13.9602
+cap "pfet_5/a_0_n13#" "pfet_4/a_0_n13#" 9.96667
+cap "pfet_3/a_0_n13#" "pfet_2/a_0_n13#" 9.96667
+cap "pfet_5/a_n30_0#" "pfet_2/a_200_0#" 11
+cap "pfet_6/a_0_n13#" "pfet_5/a_0_n13#" 0.911585
+cap "pfet_3/a_0_n13#" "pfet_4/a_0_n13#" 9.96667
+cap "pfet_6/a_200_0#" "pfet_5/a_n30_0#" 4.36765
+cap "pfet_8/a_0_n13#" "pfet_7/a_0_n13#" 9.96667
+cap "pfet_6/a_200_0#" "vref" 33
+cap "pfet_8/a_0_n13#" "pfet_9/a_0_n13#" 0.970779
+cap "pfet_5/a_0_n13#" "pfet_6/a_0_n13#" 9.96667
+cap "pfet_4/a_0_n13#" "pfet_5/a_0_n13#" 1.55729
+cap "pfet_5/a_200_0#" "vdd" -13.9602
+cap "pfet_7/a_0_n13#" "pfet_6/a_0_n13#" 9.96667
+cap "pfet_5/a_n30_0#" "pfet_5/a_200_0#" 0.271095
+cap "vref" "pfet_5/a_200_0#" 11
+cap "pfet_10/a_200_0#" "pfet_8/a_200_0#" 4.36765
+cap "pfet_10/a_0_n13#" "pfet_11/a_0_n13#" 9.96667
+cap "pfet_8/a_0_n13#" "pfet_9/a_0_n13#" 9.96667
+cap "pfet_8/a_0_n13#" "pfet_7/a_0_n13#" 1.41038
+cap "pfet_8/a_200_0#" "vref" 33
+cap "pfet_12/a_0_n13#" "pfet_11/a_0_n13#" 1.03819
+cap "pfet_9/a_0_n13#" "pfet_10/a_0_n13#" 9.96667
+cap "pfet_15/a_0_n13#" "pfet_14/a_0_n13#" 1.11567
+cap "pfet_12/a_0_n13#" "pfet_11/a_0_n13#" 9.96667
+cap "pfet_12/a_0_n13#" "pfet_13/a_0_n13#" 9.96667
+cap "pfet_14/a_0_n13#" "pfet_13/a_0_n13#" 9.96667
+cap "pfet_11/a_0_n13#" "pfet_10/a_0_n13#" 1.28879
+cap "pfet_13/a_0_n13#" "pfet_14/a_0_n13#" 1.18651
+cap "vref" "pfet_15/a_200_0#" 33
+cap "pfet_15/a_0_n13#" "pfet_14/a_0_n13#" 9.96667
+cap "pfet_15/a_0_n13#" "pfet_16/a_0_n13#" 9.96667
+cap "pfet_15/a_200_0#" "pfet_14/a_200_0#" 4.36765
+merge "pfet_16/a_0_n13#" "pfet_15/a_0_n13#" -3471.55 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 61658 -800 0 0 -164996 -5198 -4128 -368 0 0 0 0 0 0 0 0 0 0
+merge "pfet_15/a_0_n13#" "pfet_0/a_n30_0#"
+merge "pfet_0/a_n30_0#" "net6"
+merge "pfet_13/a_n30_0#" "pfet_12/a_200_0#" -826.071 0 0 0 0 0 0 0 0 0 0 181266 -2120 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 191970 -6268 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pfet_12/a_200_0#" "pfet_3/a_n30_0#"
+merge "pfet_3/a_n30_0#" "pfet_2/a_200_0#"
+merge "pfet_2/a_200_0#" "vref"
+merge "pfet_16/SUB" "pfet_15/SUB" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pfet_15/SUB" "pfet_13/SUB"
+merge "pfet_13/SUB" "pfet_14/SUB"
+merge "pfet_14/SUB" "pfet_12/SUB"
+merge "pfet_12/SUB" "pfet_11/SUB"
+merge "pfet_11/SUB" "pfet_10/SUB"
+merge "pfet_10/SUB" "pfet_9/SUB"
+merge "pfet_9/SUB" "pfet_8/SUB"
+merge "pfet_8/SUB" "pfet_7/SUB"
+merge "pfet_7/SUB" "pfet_6/SUB"
+merge "pfet_6/SUB" "pfet_4/SUB"
+merge "pfet_4/SUB" "pfet_5/SUB"
+merge "pfet_5/SUB" "pfet_3/SUB"
+merge "pfet_3/SUB" "pfet_2/SUB"
+merge "pfet_2/SUB" "pfet_0/SUB"
+merge "pfet_0/SUB" "pfet_1/SUB"
+merge "pfet_1/SUB" "SUB"
+merge "pfet_16/a_n30_0#" "pfet_16/w_n48_n18#" -46499.2 0 0 0 0 -3623988 -32822 0 0 8981 -1459 1067088 -14768 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -400 0 0 276603 -16997 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pfet_16/w_n48_n18#" "pfet_15/a_200_0#"
+merge "pfet_15/a_200_0#" "pfet_15/w_n48_n18#"
+merge "pfet_15/w_n48_n18#" "pfet_13/a_200_0#"
+merge "pfet_13/a_200_0#" "pfet_13/w_n48_n18#"
+merge "pfet_13/w_n48_n18#" "pfet_14/a_0_n13#"
+merge "pfet_14/a_0_n13#" "pfet_14/a_n30_0#"
+merge "pfet_14/a_n30_0#" "pfet_14/w_n48_n18#"
+merge "pfet_14/w_n48_n18#" "pfet_12/a_n30_0#"
+merge "pfet_12/a_n30_0#" "pfet_12/w_n48_n18#"
+merge "pfet_12/w_n48_n18#" "pfet_11/a_200_0#"
+merge "pfet_11/a_200_0#" "pfet_11/w_n48_n18#"
+merge "pfet_11/w_n48_n18#" "pfet_10/a_n30_0#"
+merge "pfet_10/a_n30_0#" "pfet_10/w_n48_n18#"
+merge "pfet_10/w_n48_n18#" "pfet_9/a_200_0#"
+merge "pfet_9/a_200_0#" "pfet_9/w_n48_n18#"
+merge "pfet_9/w_n48_n18#" "pfet_8/a_n30_0#"
+merge "pfet_8/a_n30_0#" "pfet_8/w_n48_n18#"
+merge "pfet_8/w_n48_n18#" "pfet_7/a_200_0#"
+merge "pfet_7/a_200_0#" "pfet_7/w_n48_n18#"
+merge "pfet_7/w_n48_n18#" "pfet_6/a_n30_0#"
+merge "pfet_6/a_n30_0#" "pfet_6/w_n48_n18#"
+merge "pfet_6/w_n48_n18#" "pfet_4/a_n30_0#"
+merge "pfet_4/a_n30_0#" "pfet_4/w_n48_n18#"
+merge "pfet_4/w_n48_n18#" "pfet_5/a_200_0#"
+merge "pfet_5/a_200_0#" "pfet_5/w_n48_n18#"
+merge "pfet_5/w_n48_n18#" "pfet_3/a_200_0#"
+merge "pfet_3/a_200_0#" "pfet_3/w_n48_n18#"
+merge "pfet_3/w_n48_n18#" "pfet_2/a_n30_0#"
+merge "pfet_2/a_n30_0#" "pfet_2/w_n48_n18#"
+merge "pfet_2/w_n48_n18#" "pfet_0/w_n48_n18#"
+merge "pfet_0/w_n48_n18#" "pfet_1/a_200_0#"
+merge "pfet_1/a_200_0#" "pfet_1/w_n48_n18#"
+merge "pfet_1/w_n48_n18#" "vdd"
+merge "pfet_13/a_0_n13#" "pfet_12/a_0_n13#" -2845.31 0 0 0 0 0 0 0 0 0 0 155286 -2120 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 45404 -5600 0 0 55158 -2144 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pfet_12/a_0_n13#" "pfet_11/a_0_n13#"
+merge "pfet_11/a_0_n13#" "pfet_10/a_0_n13#"
+merge "pfet_10/a_0_n13#" "pfet_9/a_0_n13#"
+merge "pfet_9/a_0_n13#" "pfet_9/a_n30_0#"
+merge "pfet_9/a_n30_0#" "pfet_8/a_200_0#"
+merge "pfet_8/a_200_0#" "pfet_8/a_0_n13#"
+merge "pfet_8/a_0_n13#" "pfet_7/a_0_n13#"
+merge "pfet_7/a_0_n13#" "pfet_7/a_n30_0#"
+merge "pfet_7/a_n30_0#" "pfet_6/a_200_0#"
+merge "pfet_6/a_200_0#" "pfet_6/a_0_n13#"
+merge "pfet_6/a_0_n13#" "pfet_4/a_0_n13#"
+merge "pfet_4/a_0_n13#" "pfet_5/a_0_n13#"
+merge "pfet_5/a_0_n13#" "pfet_3/a_0_n13#"
+merge "pfet_3/a_0_n13#" "pfet_2/a_0_n13#"
+merge "pfet_2/a_0_n13#" "pfet_0/a_0_n13#"
+merge "pfet_0/a_0_n13#" "pfet_1/a_0_n13#"
+merge "pfet_1/a_0_n13#" "net2"
+merge "pfet_0/a_200_0#" "pfet_1/a_n30_0#" -8.9442 0 0 0 0 0 0 0 0 0 0 -10110 -1060 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6066 -1036 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pfet_16/a_200_0#" "pfet_15/a_n30_0#" -2056.65 0 0 0 0 0 0 0 0 0 0 752067 -6324 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 131334 -8442 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pfet_15/a_n30_0#" "pfet_14/a_200_0#"
+merge "pfet_14/a_200_0#" "pfet_11/a_n30_0#"
+merge "pfet_11/a_n30_0#" "pfet_10/a_200_0#"
+merge "pfet_10/a_200_0#" "pfet_4/a_200_0#"
+merge "pfet_4/a_200_0#" "pfet_5/a_n30_0#"
+merge "pfet_5/a_n30_0#" "net1"
