@@ -501,6 +501,9 @@ plot vid1#branch vid2#branch vid3#branch vid4#branch vid5#branch
 
 ![bgr-final-lay](https://user-images.githubusercontent.com/80625515/138545125-ee3572fc-5d44-4378-8ef8-6aa22eea40d3.png)
 
+#### Spice extracion for post-layout and LVS
+
+![spice-extraction](https://user-images.githubusercontent.com/80625515/138545351-e7482874-859a-45f6-ba8c-0da059caf7c7.png)
 
 ## Acknowledgement
 - Kunal Ghosh, Co-founder, VSD
